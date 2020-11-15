@@ -40,8 +40,8 @@ def main(url=''):
 
 
 def home_work(url=''):
-    response  = requests.get(url=url)
-    date = response .json()
+    rs  = requests.get(url=url)
+    date = rs .json()
     time = date['time'].find("P")
     if time == -1:
         print("Добрий день")
